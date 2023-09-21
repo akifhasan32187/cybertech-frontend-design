@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Global styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 45px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+        color: #2C358C;
+    
+}
+
+/* Main Content */
+.main-content {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+                   /* Adjust this value to match the width of your sidebar */
+}
+.main-content h1 {
+    margin-left: 700px;
+}
+
+.main-content p {
+    margin-left: 300px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #9398BE;
+    padding: 20px;
+    position: fixed;
+    height: 100%; /* Height spans the entire page */
+    width: 220px;
+    overflow-y: auto; /* Add scrollbar if the content overflows */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+/* Dropdown menu styles */
+.has-submenu .submenu-toggle::after {
+    content: "\25BE"; /* Unicode down arrow character */
+    margin-left: 5px;
+    float: right;
+    font-weight: bold;
+}
+/* Separate boxes for submenu items */
+.submenu-item {
+    background-color: #B8B6B7;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Add a margin between submenu items */
+.submenu-item + .submenu-item {
+    margin-top: 5px;
+}
+
+.submenu {
+    display: none;
+    background-color: #B8B6B7;
+    padding: 5px 10px;
+}
+
+.has-submenu.active .submenu {
+    display: block;
+}
